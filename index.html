@@ -11,45 +11,49 @@
     
     <main>
 
-        <header>
-            <input type="text" disabled id="output" class="calc_output" value="0">
-        </header>
+        <form id="calc_form">
 
-        <footer>
-            <div class="btn_group">
-                <button data-type="clear" type="reset" class="btn btn-grey" value="clear">AC</button>
-                <button data-type="operator" class="btn btn-grey" value="invert">+/-</button>
-                <button data-type="operator" class="btn btn-grey" value="%">%</button>
-                <button data-type="operator" class="btn btn-orange" value="/">÷</button>
-            </div>
+            <header>
+                <input type="text" disabled id="output" class="calc_output" value="0">
+            </header>
+    
+            <footer>
+                <div class="btn_group">
+                    <button data-type="clear" type="reset" class="btn btn-grey" value="clear">AC</button>
+                    <button data-type="operator" class="btn btn-grey" value="invert">+/-</button>
+                    <button data-type="operator" class="btn btn-grey" value="%">%</button>
+                    <button data-type="operator" class="btn btn-orange" value="/">÷</button>
+                </div>
+    
+                <div class="btn_group">
+                    <button data-type="operand" class="btn btn-dark-grey" value="7">7</button>
+                    <button data-type="operand" class="btn btn-dark-grey" value="8">8</button>
+                    <button data-type="operand" class="btn btn-dark-grey" value="9">9</button>
+                    <button data-type="operator" class="btn btn-orange" value="*">x</button>
+                </div>
+    
+                <div class="btn_group">
+                    <button data-type="operand" class="btn btn-dark-grey" value="4">4</button>
+                    <button data-type="operand" class="btn btn-dark-grey" value="5">5</button>
+                    <button data-type="operand" class="btn btn-dark-grey" value="6">6</button>
+                    <button data-type="operator" class="btn btn-orange" value="-">-</button>
+                </div>
+    
+                <div class="btn_group">
+                    <button data-type="operand" class="btn btn-dark-grey" value="1">1</button>
+                    <button data-type="operand" class="btn btn-dark-grey" value="2">2</button>
+                    <button data-type="operand" class="btn btn-dark-grey" value="3">3</button>
+                    <button data-type="operator" class="btn btn-orange" value="+">+</button>
+                </div>
+    
+                <div class="btn_group">
+                    <button data-type="operand" class="btn btn-dark-grey" value="0">0</button>
+                    <button data-type="operand" class="btn btn-dark-grey" value=".">.</button>
+                    <button data-type="operator" class="btn btn-orange" value="=">=</button>
+                </div>
+            </footer>
 
-            <div class="btn_group">
-                <button data-type="operand" class="btn btn-dark-grey" value="7">7</button>
-                <button data-type="operand" class="btn btn-dark-grey" value="8">8</button>
-                <button data-type="operand" class="btn btn-dark-grey" value="9">9</button>
-                <button data-type="operator" class="btn btn-orange" value="*">x</button>
-            </div>
-
-            <div class="btn_group">
-                <button data-type="operand" class="btn btn-dark-grey" value="4">4</button>
-                <button data-type="operand" class="btn btn-dark-grey" value="5">5</button>
-                <button data-type="operand" class="btn btn-dark-grey" value="6">6</button>
-                <button data-type="operator" class="btn btn-orange" value="-">-</button>
-            </div>
-
-            <div class="btn_group">
-                <button data-type="operand" class="btn btn-dark-grey" value="1">1</button>
-                <button data-type="operand" class="btn btn-dark-grey" value="2">2</button>
-                <button data-type="operand" class="btn btn-dark-grey" value="3">3</button>
-                <button data-type="operator" class="btn btn-orange" value="+">+</button>
-            </div>
-
-            <div class="btn_group">
-                <button data-type="operand" class="btn btn-dark-grey" value="0">0</button>
-                <button data-type="operand" class="btn btn-dark-grey" value=".">.</button>
-                <button data-type="operator" class="btn btn-orange" value="=">=</button>
-            </div>
-        </footer>
+        </form>
 
     </main>
 
