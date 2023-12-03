@@ -43,7 +43,7 @@ operatorBtns.forEach(btn => {
                 break;
             case "=":
                 equation.push(output.value);
-                output.value = eval(equation.join("")); // eval() is not safe to use with user input
+                output.value = eval(equation.join("")); // eval() is NOT safe to use when code is passed as input
                 equation = [];
                 break;
             default:
