@@ -20,9 +20,9 @@ operandBtns.forEach(btn => {
             output.value = e.target.value;
         }
         else if (output.value.includes(".")) // If we already have a dot we don't want more than one
-            output.value = output.value + "" + e.target.value.replace(".", "");
+            output.value += e.target.value.replace(".", "");
         else {
-            output.value = output.value + e.target.value;
+            output.value += e.target.value;
         }
     });
 });
@@ -31,7 +31,7 @@ operandBtns.forEach(btn => {
 let equation = [];
 operatorBtns.forEach(btn => {
     btn.addEventListener("click", e => {
-        removeActive(); // Removing the last active operator button
+        removeActive();
         e.currentTarget.classList.add("active"); // The current operator button stays active to apply styles on it
 
         switch (e.target.value) {
@@ -62,6 +62,7 @@ operatorBtns.forEach(btn => {
     });
 });
 
+// Remove the last active operator button
 const removeActive = () => {
     operatorBtns.forEach(btn => {
         btn.classList.remove("active");
